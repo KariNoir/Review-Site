@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${reviewModel.name}">What does KariNoir think?</title>
+</head>
+
+<body>
+    <header>
+        <h1 th:text="${reviewModel.name}">A Review</h1>
+    </header>
+    
+    <main> 
+        
+        <p th:text="${reviewModel.description}"></p>
+          <a href="https://www.qries.com/">
+         <img alt="Qries" src="https://www.qries.com/images/banner_logo.png"
+         width=150" height="70">
+      </a>
+    </main>
+    
+    <footer> 
+        <p><a href="/show-reviews">back to reviews</a></p>
+        <small>KariNoir</small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>My favorite things</title>
+</head>
+<section id="sidebar">
+
+<body>
+    <header>
+        <h1>A list of All Courses</h1>
+    </header>
+    
+    <main> 
+        <ul>
+            <li th:each="review: ${reviewsModel}"><a th:href="|/show-reviews/${review.id}|"
+             th:text="${review.name}"></a></li>
+        </ul>
+    </main>
+  
+            <h6>
+                    <div class="dropdown" style="float:left;">
+                            <button class="dropbtn">Travel</button>
+                            <div class="dropdown-content" style="left:0;">
+                            <a href="#">Travel</a>
+                            <a href="#">Restaurants</a>
+                            <a href="#">Rest</a>
+                            </div>
+                          </div>
+
+                    <div class="dropdown" style="float:left;">
+                                <button class="dropbtn">Restaurants</Menu></button>
+                                <div class="dropdown-content">
+                                <a href="#">yummy!</a>
+                                </div>
+                              </div>
+
+                    <div class="dropdown" style="float:left;">
+                                    <button class="dropbtn">Rest</button>
+                                    <div class="dropdown-content">
+                                    <!--<a href="#">Link 1</a>
+                                    <a href="#">lay back</a>
+                                 
+                                    </div>
+                                  </div> 
+                                  </h6>
+                                      
+    <footer> 
+        <small>KariNoir</small>
+    </footer>
+</body>
+</html>
+
+
