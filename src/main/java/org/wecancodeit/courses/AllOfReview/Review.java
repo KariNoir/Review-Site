@@ -1,10 +1,19 @@
 package org.wecancodeit.courses.AllOfReview;
+	
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.lob;
 
-public class Review {
-
-
+	@Entity
+	public class Review {
+		@Id
+		@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	private String name;
+	
+		@Lob
 	private String category;
 	private String content;
 

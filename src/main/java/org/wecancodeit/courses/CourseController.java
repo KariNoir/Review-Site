@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/show-courses")
 public class CourseController {
 
+	
 	@Resource
 	private CourseRepository courseRepo;
+
+	@RequestMapping("/show-courses")
 
 	@GetMapping("/show-courses")
 	public String findAllCourses(Model model) {
